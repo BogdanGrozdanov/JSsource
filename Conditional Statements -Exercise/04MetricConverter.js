@@ -6,7 +6,7 @@ let outValue = 0.0;
 
 if (inMesure === "mm"){
   if (outMesure === "cm"){
-    outValue = value * 0.01;
+    outValue = value * 0.1;
   }
   else if (outMesure === "m")
   {
@@ -20,7 +20,7 @@ else if (inMesure === "cm")
     }
     else if (outMesure === "m")
     {
-        outValue = value * 0.001;
+        outValue = value * 0.01;
     }
 }
 else if (inMesure === "m")
@@ -35,4 +35,4 @@ else if (inMesure === "m")
 }
 console.log(outValue.toFixed(3));
 }
-metricConverter(["1204.34","mm","cm"])
+metricConverter(["5000","cm","m"])
